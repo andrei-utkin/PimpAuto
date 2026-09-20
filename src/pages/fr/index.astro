@@ -1,0 +1,23 @@
+---
+import LocaleLanding from '../../components/LocaleLanding.astro';
+const copy = {
+  lang: 'fr', path: '/fr/',
+  title: 'Pimp Auto — recherche et livraison de pièces automobiles rares',
+  description: 'Recherche de pièces rares et de collection par VIN, référence ou photo. Vérification de compatibilité, sourcing international et livraison. Point physique à Mandelieu.',
+  eyebrow: 'CLASSIQUE · YOUNGTIMER · PREMIUM',
+  headline: 'Nous trouvons la pièce rare pour votre voiture.',
+  support: 'Commencez avec un VIN, une référence, une photo ou une description. Nous recherchons, vérifions la compatibilité et organisons la livraison.',
+  cta: 'ENVOYER UNE DEMANDE', methods: ['VIN', 'RÉFÉRENCE', 'PHOTO', 'DESCRIPTION'],
+  expertiseLabel: 'EXPERTISE', expertiseTitle: 'Les pièces que l’on ne trouve pas en rayon.',
+  expertiseCopy: 'Depuis 2011, Pimp Auto accompagne les propriétaires de voitures classiques, youngtimer et premium, de la demande initiale jusqu’à la pièce compatible.',
+  regionsLabel: 'RECHERCHE INTERNATIONALE', regionsTitle: 'Nous cherchons là où la pièce existe.',
+  regionsCopy: 'La recherche ne se limite pas à un catalogue. Nous comparons les références en Europe, aux États-Unis, au Japon et auprès de fournisseurs spécialisés.',
+  storesLabel: 'BOUTIQUES RÉGIONALES', storesTitle: 'Boutiques AUTO.PRO par région.',
+  storesCopy: 'Les boutiques espagnole et polonaise PimpAvto sont disponibles sur AUTO.PRO. Le lien français sera ajouté après confirmation.', pending: 'LIEN À VENIR', storeOpen: 'OUVRIR AUTO.PRO',
+  locationLabel: 'POINT PHYSIQUE', locationTitle: 'Mandelieu-la-Napoule',
+  locationCopy: 'Pimp Auto dispose d’un point physique à Mandelieu. L’adresse, les horaires et les numéros sont vérifiés sur AUTO.PRO.',
+  hoursTitle: 'Horaires', hoursValue: 'Lun–Ven 09:00–18:00 · Sam–Dim fermé', phonesTitle: 'Téléphones', addressTitle: 'Adresse', addressValue: '865 av. de Cannes, Mandelieu-la-Napoule, France',
+  contact: 'Recherche de pièces automobiles rares par VIN, référence ou photo.'
+};
+---
+<LocaleLanding {copy} />

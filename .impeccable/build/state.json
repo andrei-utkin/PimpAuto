@@ -1,0 +1,361 @@
+{
+  "tool": "build-phase",
+  "version": 2,
+  "startedAt": "2026-09-19T21:38:15.762Z",
+  "comp": ".impeccable/mocks/composition-a.png",
+  "direction": "0de0a587",
+  "breakpoint": "1586x992",
+  "artifact": null,
+  "phase": "review",
+  "phases": {
+    "comps": {
+      "status": "closed",
+      "openedAt": "2026-09-19T21:38:15.762Z",
+      "closedAt": "2026-09-19T21:45:51.814Z",
+      "attempts": 2,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "3 comps, 1 approved",
+        "approved": ".impeccable/mocks/composition-a.png",
+        "at": "2026-09-19T21:45:51.814Z"
+      },
+      "forced": null
+    },
+    "spec": {
+      "status": "closed",
+      "openedAt": "2026-09-19T21:45:51.841Z",
+      "closedAt": "2026-09-19T21:47:36.922Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "27 regions, 2 plates, 11 text regions measured",
+        "at": "2026-09-19T21:47:36.922Z"
+      },
+      "forced": null
+    },
+    "plates": {
+      "status": "closed",
+      "openedAt": "2026-09-19T21:47:36.922Z",
+      "closedAt": "2026-09-19T21:51:49.617Z",
+      "attempts": 2,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "2/2 plates",
+        "at": "2026-09-19T21:51:49.617Z"
+      },
+      "forced": null
+    },
+    "hero": {
+      "status": "closed",
+      "openedAt": "2026-09-19T21:51:49.617Z",
+      "closedAt": "2026-09-19T22:41:50.976Z",
+      "attempts": 3,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "hero 80% (drift)",
+        "score": 0.7953,
+        "verdict": "drift",
+        "report": ".impeccable/review/diff/hero/report.json",
+        "sideBySide": "C:/repos/uas_repo/PimpAuto/.impeccable/review/diff/hero/side-by-side.png",
+        "worst": [
+          "next-section-title drift 46%",
+          "since-note drift 47%",
+          "wordmark drift 53%"
+        ],
+        "worstIds": [
+          "next-section-title",
+          "since-note",
+          "wordmark"
+        ],
+        "worstCrops": [
+          {
+            "id": "next-section-title",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.4568,
+              "structure": 0.3347,
+              "color": 0.566,
+              "colorIntersection": 0.1637,
+              "paletteMatch": 0.7825,
+              "detail": 0.5328,
+              "detailRaw": 0.6265,
+              "detailAdded": 0.1875,
+              "bands": 0.68
+            },
+            "file": ".impeccable/review/diff/hero/regions/next-section-title.png"
+          },
+          {
+            "id": "since-note",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.4699,
+              "structure": 0.5401,
+              "color": 0.5951,
+              "colorIntersection": 0.2947,
+              "paletteMatch": 0.7568,
+              "detail": 0.224,
+              "detailRaw": 0.2917,
+              "detailAdded": 0.1354,
+              "bands": 0.175
+            },
+            "file": ".impeccable/review/diff/hero/regions/since-note.png"
+          },
+          {
+            "id": "wordmark",
+            "verdict": "drift",
+            "score": {
+              "overall": 0.5284,
+              "structure": 0.4676,
+              "color": 0.7128,
+              "colorIntersection": 0.4682,
+              "paletteMatch": 0.8445,
+              "detail": 0.4202,
+              "detailRaw": 0.5347,
+              "detailAdded": 0.2292,
+              "bands": 0.5333
+            },
+            "file": ".impeccable/review/diff/hero/regions/wordmark.png"
+          }
+        ],
+        "advisories": [
+          "(advisory, above the 72% bar) region request-vin: its ink sits in a 88x65px box in the comp and 114x82px in the build (padding, row height, or size); match the box, not only the position",
+          "(advisory, above the 72% bar) region request-number: its ink sits in a 108x64px box in the comp and 122x82px in the build (padding, row height, or size); match the box, not only the position",
+          "(advisory, above the 72% bar) region process-delivery: its ink sits in a 58x47px box in the comp and 108x55px in the build (padding, row height, or size); match the box, not only the position",
+          "(advisory, unchanged for 3+ attempts) text since-note: ink is #0a0a0a in the build, #084285 in the comp; use the comp's colour",
+          "(advisory, unchanged for 3+ attempts) text hero-support: its first line starts 16px lower than in the comp (16px vs 0px into the region box); the spacing above it is too large"
+        ],
+        "regionVerdicts": {
+          "top-rail": "drift",
+          "wordmark": "drift",
+          "since-note": "drift",
+          "main-nav": "drift",
+          "language-switch": "drift",
+          "hero-blue-ground": "drift",
+          "hero-kinds": "drift",
+          "hero-headline": "drift",
+          "hero-support": "drift",
+          "hero-cta": "drift",
+          "request-vin": "match",
+          "request-number": "drift",
+          "request-photo": "drift",
+          "hero-mechanical-plate": "match",
+          "process-band": "drift",
+          "process-title": "drift",
+          "process-request": "drift",
+          "process-search": "drift",
+          "process-compatibility": "drift",
+          "process-delivery": "drift",
+          "regions-title": "drift",
+          "regions-tabs": "drift",
+          "mandelieu-point": "drift",
+          "next-section-title": "drift",
+          "next-section-copy": "drift",
+          "classic-car-detail": "drift",
+          "future-cars-note": "drift"
+        },
+        "at": "2026-09-19T22:41:50.975Z"
+      },
+      "forced": null,
+      "readingsSeen": {
+        "text hero-kinds: cap height 10.7px in the build, 17.9px in the comp (-40%); set font-size so the cap height renders at 17.9px": 1,
+        "text hero-headline: letter-spacing is tighter than the comp's (gap 0.056 vs 0.147 of the cap height); set letter-spacing to open it by about 3px": 1,
+        "text future-cars-note: 3 lines in the build, 4 in the comp; the measure (max-width, font-size, letter-spacing) wraps it differently, so the block is a different shape": 2,
+        "text hero-support: the face renders 25% heavier than the comp's (ink density 0.64 vs 0.51); drop a weight step or use the ranked face": 1,
+        "text wordmark: ink is #081819 in the build, #083981 in the comp; use the comp's colour": 1,
+        "text since-note: ink is #081919 in the build, #084686 in the comp; use the comp's colour": 1,
+        "text main-nav: ink is #1f3a5d in the build, #80858e in the comp; use the comp's colour": 1,
+        "text process-title: ink is #1b8ac6 in the build, #f0f8f8 in the comp; use the comp's colour": 1,
+        "text hero-kinds: its first line starts 17px higher than in the comp (0px vs 17px into the region box); the spacing above it is too small": 2,
+        "text hero-support: its first line starts 23px lower than in the comp (23px vs 0px into the region box); the spacing above it is too large": 2,
+        "text future-cars-note: it starts 34px further right than in the comp": 3,
+        "control hero-cta: its rule sits 3px into the box in the comp and 57px in the build (+54px), so the strip is taller than the comp's; match the height, not only the position": 2,
+        "control regions-tabs: its rule sits 30px into the box in the comp and 43px in the build (+13px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "text hero-kinds: cap height 28.8px in the build, 17.9px in the comp (+61%); set font-size so the cap height renders at 17.9px": 1,
+        "text hero-headline: cap height 24.9px in the build, 34px in the comp (-27%); set font-size so the cap height renders at 34px (font-match ranked Exo 2 700 at 49px)": 1,
+        "text regions-title: ink is #7898b8 in the build, #094585 in the comp; use the comp's colour": 1,
+        "text next-section-title: ink is #081818 in the build, #787c83 in the comp; use the comp's colour": 1,
+        "text next-section-copy: ink is #76a1cf in the build, #6e737c in the comp; use the comp's colour": 1,
+        "control regions-tabs: its rule sits 72px into the box in the comp and 152px in the build (+80px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "text hero-headline: cap height 35.2px in the build, 53.7px in the comp (-34%); set font-size so the cap height renders at 53.7px (font-match ranked Yaldevi 700 at 77px)": 1,
+        "text since-note: ink is #080808 in the build, #084285 in the comp; use the comp's colour": 5,
+        "text next-section-copy: line pitch 18px in the build, 25px in the comp (-27%); set line-height so 3 lines stand 75px tall": 1,
+        "control regions-tabs: its rule sits 22px into the box in the comp and 43px in the build (+21px), so the strip is taller than the comp's; match the height, not only the position": 1,
+        "text hero-headline: cap height 38px in the build, 53.7px in the comp (-29%); set font-size so the cap height renders at 53.7px (font-match ranked Yaldevi 700 at 77px)": 2,
+        "text hero-support: cap height 38.4px in the build, 16.2px in the comp (+137%); set font-size so the cap height renders at 16.2px": 2,
+        "text hero-support: 1 line in the build, 2 in the comp; the measure (max-width, font-size, letter-spacing) wraps it differently, so the block is a different shape": 3,
+        "control hero-cta: its rule sits 13px into the box in the comp and 19px in the build (+6px), so the strip is taller than the comp's; match the height, not only the position": 23,
+        "control regions-tabs: its rule sits 22px into the box in the comp and 29px in the build (+7px), so the strip is taller than the comp's; match the height, not only the position": 2,
+        "text hero-support: its first line starts 24px lower than in the comp (24px vs 0px into the region box); the spacing above it is too large": 3,
+        "text next-section-copy: 4 lines in the build, 3 in the comp; the measure (max-width, font-size, letter-spacing) wraps it differently, so the block is a different shape": 2,
+        "text hero-support: the face renders 56% heavier than the comp's (ink density 0.80 vs 0.51); drop a weight step or use the ranked face": 1,
+        "text since-note: ink is #a9bdcf in the build, #084285 in the comp; use the comp's colour": 1,
+        "text process-title: ink is #114d94 in the build, #7c98ba in the comp; use the comp's colour": 1,
+        "text hero-support: its first line starts 34px lower than in the comp (34px vs 0px into the region box); the spacing above it is too large": 1,
+        "text since-note: ink is #0a0a0a in the build, #084285 in the comp; use the comp's colour": 24,
+        "text hero-support: its first line starts 29px lower than in the comp (29px vs 0px into the region box); the spacing above it is too large": 1,
+        "text process-title: ink is #1c558b in the build, #7c98ba in the comp; use the comp's colour": 2,
+        "text hero-support: its first line starts 18px lower than in the comp (18px vs 0px into the region box); the spacing above it is too large": 1,
+        "text hero-support: its first line starts 16px lower than in the comp (16px vs 0px into the region box); the spacing above it is too large": 14
+      },
+      "records": 29,
+      "history": [
+        {
+          "at": "2026-09-19T22:36:23.533Z",
+          "score": 0.7838,
+          "worstIds": [
+            "next-section-title",
+            "since-note",
+            "hero-headline"
+          ],
+          "regionVerdicts": {
+            "top-rail": "drift",
+            "wordmark": "drift",
+            "since-note": "drift",
+            "main-nav": "drift",
+            "language-switch": "drift",
+            "hero-blue-ground": "drift",
+            "hero-kinds": "drift",
+            "hero-headline": "drift",
+            "hero-support": "drift",
+            "hero-cta": "drift",
+            "request-vin": "drift",
+            "request-number": "drift",
+            "request-photo": "drift",
+            "hero-mechanical-plate": "match",
+            "process-band": "drift",
+            "process-title": "drift",
+            "process-request": "drift",
+            "process-search": "drift",
+            "process-compatibility": "drift",
+            "process-delivery": "drift",
+            "regions-title": "drift",
+            "regions-tabs": "drift",
+            "mandelieu-point": "drift",
+            "next-section-title": "drift",
+            "next-section-copy": "drift",
+            "classic-car-detail": "drift",
+            "future-cars-note": "drift"
+          },
+          "artifactHash": null
+        },
+        {
+          "at": "2026-09-19T22:41:50.976Z",
+          "score": 0.7953,
+          "worstIds": [
+            "next-section-title",
+            "since-note",
+            "wordmark"
+          ],
+          "regionVerdicts": {
+            "top-rail": "drift",
+            "wordmark": "drift",
+            "since-note": "drift",
+            "main-nav": "drift",
+            "language-switch": "drift",
+            "hero-blue-ground": "drift",
+            "hero-kinds": "drift",
+            "hero-headline": "drift",
+            "hero-support": "drift",
+            "hero-cta": "drift",
+            "request-vin": "match",
+            "request-number": "drift",
+            "request-photo": "drift",
+            "hero-mechanical-plate": "match",
+            "process-band": "drift",
+            "process-title": "drift",
+            "process-request": "drift",
+            "process-search": "drift",
+            "process-compatibility": "drift",
+            "process-delivery": "drift",
+            "regions-title": "drift",
+            "regions-tabs": "drift",
+            "mandelieu-point": "drift",
+            "next-section-title": "drift",
+            "next-section-copy": "drift",
+            "classic-car-detail": "drift",
+            "future-cars-note": "drift"
+          },
+          "artifactHash": null
+        }
+      ]
+    },
+    "sections": {
+      "status": "closed",
+      "openedAt": "2026-09-19T22:41:50.976Z",
+      "closedAt": "2026-09-19T22:45:51.053Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no mechanical gate",
+        "at": "2026-09-19T22:45:51.053Z"
+      },
+      "forced": null
+    },
+    "motion": {
+      "status": "closed",
+      "openedAt": "2026-09-19T22:45:51.053Z",
+      "closedAt": "2026-09-19T22:46:52.360Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no mechanical gate",
+        "at": "2026-09-19T22:46:52.360Z"
+      },
+      "forced": null
+    },
+    "responsive": {
+      "status": "closed",
+      "openedAt": "2026-09-19T22:46:52.360Z",
+      "closedAt": "2026-09-19T22:49:25.684Z",
+      "attempts": 3,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "desktop 80% (match)",
+        "score": 0.8021,
+        "sideBySide": "C:/repos/uas_repo/PimpAuto/.impeccable/review/diff/desktop/side-by-side.png",
+        "at": "2026-09-19T22:49:25.684Z"
+      },
+      "forced": null
+    },
+    "review": {
+      "status": "closed",
+      "openedAt": "2026-09-19T22:49:25.685Z",
+      "closedAt": "2026-09-19T23:00:30.379Z",
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    }
+  },
+  "finish": {
+    "disposition": "ship",
+    "at": "2026-09-19T23:00:30.379Z",
+    "phaseAtFinish": "review"
+  },
+  "plates": {
+    "hero-mechanical-plate": {
+      "status": "ok",
+      "score": 0.6074,
+      "size": "1470x1070"
+    },
+    "classic-car-detail": {
+      "status": "ok",
+      "score": 0.6811,
+      "size": "2170x725"
+    }
+  }
+}

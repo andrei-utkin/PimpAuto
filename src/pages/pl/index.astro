@@ -1,0 +1,23 @@
+---
+import LocaleLanding from '../../components/LocaleLanding.astro';
+const copy = {
+  lang: 'pl', path: '/pl/',
+  title: 'Pimp Auto — wyszukiwanie i dostawa rzadkich części samochodowych',
+  description: 'Dobór rzadkich części do aut klasycznych na podstawie VIN, numeru lub zdjęcia. Weryfikacja zgodności, międzynarodowe wyszukiwanie i dostawa.',
+  eyebrow: 'KLASYKI · YOUNGTIMER · PREMIUM',
+  headline: 'Znajdziemy rzadką część do Twojego samochodu.',
+  support: 'Wystarczy VIN, numer części, zdjęcie lub opis. Wyszukujemy globalnie, sprawdzamy zgodność i organizujemy dostawę.',
+  cta: 'WYŚLIJ ZAPYTANIE', methods: ['VIN', 'NUMER CZĘŚCI', 'ZDJĘCIE', 'OPIS'],
+  expertiseLabel: 'DOŚWIADCZENIE', expertiseTitle: 'Części, których nie ma na zwykłej półce.',
+  expertiseCopy: 'Od 2011 roku Pimp Auto pomaga właścicielom aut klasycznych, youngtimerów i samochodów premium przejść od niepełnego zapytania do właściwej części.',
+  regionsLabel: 'WYSZUKIWANIE GLOBALNE', regionsTitle: 'Szukamy tam, gdzie część jest dostępna.',
+  regionsCopy: 'Nie ograniczamy się do jednego katalogu. Porównujemy numery w Europie, USA, Japonii i u wyspecjalizowanych dostawców.',
+  storesLabel: 'SKLEPY REGIONALNE', storesTitle: 'Sklepy AUTO.PRO według regionu.',
+  storesCopy: 'Hiszpański i polski sklep PimpAvto są już dostępne w AUTO.PRO. Link do sklepu francuskiego dodamy po potwierdzeniu.', pending: 'LINK WKRÓTCE', storeOpen: 'OTWÓRZ AUTO.PRO',
+  locationLabel: 'PUNKT STACJONARNY', locationTitle: 'Mandelieu-la-Napoule',
+  locationCopy: 'Pimp Auto ma punkt stacjonarny w Mandelieu. Adres, godziny i telefony potwierdzono w AUTO.PRO.',
+  hoursTitle: 'Godziny', hoursValue: 'Pon–Pt 09:00–18:00 · Sob–Nd zamknięte', phonesTitle: 'Telefony', addressTitle: 'Adres', addressValue: '865 av. de Cannes, Mandelieu-la-Napoule, Francja',
+  contact: 'Wyszukiwanie rzadkich części po VIN, numerze lub zdjęciu.'
+};
+---
+<LocaleLanding {copy} />

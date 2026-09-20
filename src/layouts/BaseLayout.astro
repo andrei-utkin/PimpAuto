@@ -1,0 +1,74 @@
+---
+import '@fontsource/exo-2/400.css';
+import '@fontsource/exo-2/500.css';
+import '@fontsource/exo-2/600.css';
+import '@fontsource/exo-2/700.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  lang?: string;
+  localePath?: string;
+}
+
+const { title, description, lang = 'ru', localePath = '/' } = Astro.props;
+const socialImage = '/assets/plates/hero-mechanical-plate.png';
+const absolute = (path: string) => Astro.site ? new URL(path, Astro.site).toString() : path;
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Pimp Auto',
+  foundingDate: '2011',
+  url: absolute('/'),
+  image: absolute(socialImage),
+  sameAs: [
+    'https://www.instagram.com/pimp_auto/',
+    'https://avtopro.es/seller/pimpavto-1444481/',
+    'https://avtopro.pl/seller/pimpavto-1394944/'
+  ],
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '865 av. de Cannes',
+    addressLocality: 'Mandelieu-la-Napoule',
+    addressCountry: 'FR'
+  },
+  contactPoint: [
+    { '@type': 'ContactPoint', telephone: '+48 794 551 812', contactType: 'sales' },
+    { '@type': 'ContactPoint', telephone: '+375 44 773 33 39', contactType: 'sales' }
+  ],
+  areaServed: ['Europe', 'France', 'Spain', 'Poland', 'United States', 'Japan'],
+  knowsAbout: ['rare automotive parts', 'classic car parts', 'VIN parts search', 'youngtimer parts'],
+};
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#083e81" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pimp Auto" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={absolute(socialImage)} />
+    <meta property="og:locale" content={lang === 'ru' ? 'ru_RU' : lang === 'en' ? 'en_US' : lang === 'fr' ? 'fr_FR' : lang === 'es' ? 'es_ES' : 'pl_PL'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href={absolute(localePath)} />
+    <link rel="alternate" hreflang="ru" href={absolute('/')} />
+    <link rel="alternate" hreflang="en" href={absolute('/en/')} />
+    <link rel="alternate" hreflang="fr" href={absolute('/fr/')} />
+    <link rel="alternate" hreflang="pl" href={absolute('/pl/')} />
+    <link rel="alternate" hreflang="es" href={absolute('/es/')} />
+    <link rel="alternate" hreflang="x-default" href={absolute('/')} />
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scaffold reference: composition-a.png</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@700&display=swap">
+  <link rel="stylesheet" href="layout.css">
+  <style>html,body{margin:0}body{background:#dfdfe0}.region{box-sizing:border-box}.region.text p{white-space:pre-wrap}</style>
+</head>
+<body>
+<!-- Reference only. Every region sits at its measured box inside a comp-aspect frame. Take the boxes (layout.css), keep your own semantic structure. -->
+<main class="comp-frame" style="max-width:1586px">
+  <div class="r-top-rail region chrome" data-region="top-rail"><!-- thin warm-white navigation rail with a fine lower rule --></div>
+  <div class="r-wordmark region text" data-region="wordmark"><!-- PIMP AUTO black condensed wordmark --><p style="font-size:var(--r-wordmark-font);line-height:1.05;margin:0">wordmark</p></div>
+  <div class="r-since-note region text" data-region="since-note"><!-- small since 2011 note beside the wordmark --><p style="line-height:1.05;margin:0">since-note</p></div>
+  <div class="r-main-nav region text" data-region="main-nav"><!-- compact uppercase navigation links --><p style="font-size:var(--r-main-nav-font);line-height:1.05;margin:0">main-nav</p></div>
+  <div class="r-language-switch region control" data-region="language-switch"><!-- RU EN FR PL language switch with RU active: rebuild the control's chrome from the crop (comp-spec.mjs --crop language-switch); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-hero-blue-ground region chrome" data-region="hero-blue-ground"><!-- solid cobalt-blue left hero field --></div>
+  <div class="r-hero-kinds region text" data-region="hero-kinds"><!-- КЛАССИКА / YOUNGTIMER / PREMIUM category line --><p style="font-size:var(--r-hero-kinds-font);line-height:1.05;margin:0">hero-kinds</p></div>
+  <div class="r-hero-headline region text" data-region="hero-headline"><!-- large white three-line promise headline --><p style="font-size:var(--r-hero-headline-font);font-family:var(--r-hero-headline-family),sans-serif;font-weight:var(--r-hero-headline-weight);line-height:1.05;margin:0">hero-headline</p></div>
+  <div class="r-hero-support region text" data-region="hero-support"><!-- two-line white supporting sentence --><p style="font-size:var(--r-hero-support-font);line-height:1.05;margin:0">hero-support</p></div>
+  <div class="r-hero-cta region control" data-region="hero-cta"><!-- single safety-orange rectangular request button with arrow: rebuild the control's chrome from the crop (comp-spec.mjs --crop hero-cta); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-request-vin region control" data-region="request-vin"><!-- VIN request method with document pictogram and short caption: rebuild the control's chrome from the crop (comp-spec.mjs --crop request-vin); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-request-number region control" data-region="request-number"><!-- part-number request method with barcode pictogram and caption: rebuild the control's chrome from the crop (comp-spec.mjs --crop request-number); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-request-photo region control" data-region="request-photo"><!-- third request method with landscape pictogram and caption: rebuild the control's chrome from the crop (comp-spec.mjs --crop request-photo); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <figure class="r-hero-mechanical-plate region plate" data-region="hero-mechanical-plate"><img src="../../../assets/plates/hero-mechanical-plate.png" alt="" style="width:100%;height:100%;object-fit:contain;object-position:top left"></figure>
+  <div class="r-process-band region chrome" data-region="process-band"><!-- warm-white continuation band with fine blue rules --></div>
+  <div class="r-process-title region text" data-region="process-title"><!-- КАК ЭТО РАБОТАЕТ small tracked title --><p style="line-height:1.05;margin:0">process-title</p></div>
+  <div class="r-process-request region control" data-region="process-request"><!-- 01 ЗАПРОС process step with document pictogram and arrow: rebuild the control's chrome from the crop (comp-spec.mjs --crop process-request); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-process-search region control" data-region="process-search"><!-- 02 ПОИСК process step with magnifier pictogram and arrow: rebuild the control's chrome from the crop (comp-spec.mjs --crop process-search); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-process-compatibility region control" data-region="process-compatibility"><!-- 03 СОВМЕСТИМОСТЬ process step with mechanical pictogram and arrow: rebuild the control's chrome from the crop (comp-spec.mjs --crop process-compatibility); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-process-delivery region control" data-region="process-delivery"><!-- 04 ДОСТАВКА process step with package pictogram: rebuild the control's chrome from the crop (comp-spec.mjs --crop process-delivery); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-regions-title region text" data-region="regions-title"><!-- ПОИСК ПО РЕГИОНАМ small tracked title --><p style="line-height:1.05;margin:0">regions-title</p></div>
+  <div class="r-regions-tabs region control" data-region="regions-tabs"><!-- four square region tabs for Europe, USA, Japan and other regions: rebuild the control's chrome from the crop (comp-spec.mjs --crop regions-tabs); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-mandelieu-point region control" data-region="mandelieu-point"><!-- Mandelieu physical-point summary with map pin, no exact address: rebuild the control's chrome from the crop (comp-spec.mjs --crop mandelieu-point); its ink box, border, fill, radius, and label size are the comp's --></div>
+  <div class="r-next-section-title region text" data-region="next-section-title"><!-- large black next-section statement ЭКСПЕРТИЗА. ДОСТУП. РЕЗУЛЬТАТ. --><p style="font-size:var(--r-next-section-title-font);line-height:1.05;margin:0">next-section-title</p></div>
+  <div class="r-next-section-copy region text" data-region="next-section-copy"><!-- brief explanatory paragraph about sourcing compatible parts worldwide --><p style="font-size:var(--r-next-section-copy-font);line-height:1.05;margin:0">next-section-copy</p></div>
+  <figure class="r-classic-car-detail region plate" data-region="classic-car-detail"><img src="../../../assets/plates/classic-car-detail.png" alt="" style="width:100%;height:100%;object-fit:contain;object-position:center"></figure>
+  <div class="r-future-cars-note region text" data-region="future-cars-note"><!-- white statement on cobalt field about preserving cars for future generations --><p style="font-size:var(--r-future-cars-note-font);line-height:1.05;margin:0">future-cars-note</p></div>
+</main>
+</body>
+</html>

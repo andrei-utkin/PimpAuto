@@ -1,0 +1,34 @@
+{
+  "regions": [
+    { "id": "top-rail", "kind": "chrome", "grid": "A0:J0", "note": "thin warm-white navigation rail with a fine lower rule" },
+    { "id": "wordmark", "kind": "text", "grid": "A0:B0", "box": { "x": 0.03, "y": 0.012, "w": 0.13, "h": 0.055 }, "note": "PIMP AUTO black condensed wordmark" },
+    { "id": "since-note", "kind": "text", "grid": "B0:C0", "box": { "x": 0.13, "y": 0.012, "w": 0.18, "h": 0.055 }, "note": "small since 2011 note beside the wordmark" },
+    { "id": "main-nav", "kind": "text", "grid": "G0:I0", "box": { "x": 0.63, "y": 0.015, "w": 0.24, "h": 0.045 }, "note": "compact uppercase navigation links" },
+    { "id": "language-switch", "kind": "control", "grid": "I0:J0", "box": { "x": 0.875, "y": 0.012, "w": 0.115, "h": 0.05 }, "note": "RU EN FR PL language switch with RU active" },
+
+    { "id": "hero-blue-ground", "kind": "chrome", "grid": "A1:D6", "snap": false, "note": "solid cobalt-blue left hero field" },
+    { "id": "hero-kinds", "kind": "text", "grid": "A1:C1", "box": { "x": 0.03, "y": 0.105, "w": 0.28, "h": 0.05 }, "note": "КЛАССИКА / YOUNGTIMER / PREMIUM category line" },
+    { "id": "hero-headline", "kind": "text", "grid": "A2:D3", "box": { "x": 0.03, "y": 0.15, "w": 0.33, "h": 0.21 }, "note": "large white three-line promise headline" },
+    { "id": "hero-support", "kind": "text", "grid": "A4:D4", "box": { "x": 0.03, "y": 0.39, "w": 0.34, "h": 0.08 }, "note": "two-line white supporting sentence" },
+    { "id": "hero-cta", "kind": "control", "grid": "A5:C5", "box": { "x": 0.03, "y": 0.49, "w": 0.21, "h": 0.055 }, "note": "single safety-orange rectangular request button with arrow" },
+    { "id": "request-vin", "kind": "control", "grid": "A6:A6", "box": { "x": 0.03, "y": 0.58, "w": 0.08, "h": 0.085 }, "codeDrawn": true, "note": "VIN request method with document pictogram and short caption" },
+    { "id": "request-number", "kind": "control", "grid": "B6:C6", "box": { "x": 0.13, "y": 0.58, "w": 0.09, "h": 0.085 }, "codeDrawn": true, "note": "part-number request method with barcode pictogram and caption" },
+    { "id": "request-photo", "kind": "control", "grid": "C6:D6", "box": { "x": 0.25, "y": 0.58, "w": 0.11, "h": 0.085 }, "codeDrawn": true, "note": "third request method with landscape pictogram and caption" },
+    { "id": "hero-mechanical-plate", "kind": "plate", "grid": "E0:J6", "bleed": true, "note": "four overlapping translucent drafting sheets carrying one precise exploded vintage carburetor assembly, registration crosses, fine callouts and matte-metal parts; no website navigation or CTA text" },
+
+    { "id": "process-band", "kind": "chrome", "grid": "A7:J8", "snap": false, "note": "warm-white continuation band with fine blue rules" },
+    { "id": "process-title", "kind": "text", "grid": "A7:B7", "box": { "x": 0.03, "y": 0.72, "w": 0.17, "h": 0.03 }, "note": "КАК ЭТО РАБОТАЕТ small tracked title" },
+    { "id": "process-request", "kind": "control", "grid": "A7:B8", "box": { "x": 0.03, "y": 0.75, "w": 0.10, "h": 0.10 }, "codeDrawn": true, "note": "01 ЗАПРОС process step with document pictogram and arrow" },
+    { "id": "process-search", "kind": "control", "grid": "B7:C8", "box": { "x": 0.14, "y": 0.75, "w": 0.10, "h": 0.10 }, "codeDrawn": true, "note": "02 ПОИСК process step with magnifier pictogram and arrow" },
+    { "id": "process-compatibility", "kind": "control", "grid": "C7:D8", "box": { "x": 0.26, "y": 0.75, "w": 0.13, "h": 0.10 }, "codeDrawn": true, "note": "03 СОВМЕСТИМОСТЬ process step with mechanical pictogram and arrow" },
+    { "id": "process-delivery", "kind": "control", "grid": "D7:E8", "box": { "x": 0.40, "y": 0.75, "w": 0.08, "h": 0.10 }, "codeDrawn": true, "note": "04 ДОСТАВКА process step with package pictogram" },
+    { "id": "regions-title", "kind": "text", "grid": "F7:G7", "box": { "x": 0.52, "y": 0.705, "w": 0.18, "h": 0.04 }, "note": "ПОИСК ПО РЕГИОНАМ small tracked title" },
+    { "id": "regions-tabs", "kind": "control", "grid": "F7:I8", "box": { "x": 0.52, "y": 0.75, "w": 0.34, "h": 0.07 }, "note": "four square region tabs for Europe, USA, Japan and other regions" },
+    { "id": "mandelieu-point", "kind": "control", "grid": "I7:J8", "box": { "x": 0.87, "y": 0.735, "w": 0.12, "h": 0.10 }, "note": "Mandelieu physical-point summary with map pin, no exact address" },
+
+    { "id": "next-section-title", "kind": "text", "grid": "A9:C9", "box": { "x": 0.03, "y": 0.90, "w": 0.23, "h": 0.10 }, "note": "large black next-section statement ЭКСПЕРТИЗА. ДОСТУП. РЕЗУЛЬТАТ." },
+    { "id": "next-section-copy", "kind": "text", "grid": "D9:F9", "box": { "x": 0.30, "y": 0.90, "w": 0.25, "h": 0.10 }, "note": "brief explanatory paragraph about sourcing compatible parts worldwide" },
+    { "id": "classic-car-detail", "kind": "image", "grid": "G9:I9", "bleed": true, "note": "black-and-white close crop of an unbranded classic car headlamp and grille" },
+    { "id": "future-cars-note", "kind": "text", "grid": "J9:J9", "box": { "x": 0.90, "y": 0.90, "w": 0.10, "h": 0.10 }, "note": "white statement on cobalt field about preserving cars for future generations" }
+  ]
+}

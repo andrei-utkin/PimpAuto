@@ -1,0 +1,55 @@
+{
+  "name": "Pimp Auto Technical Archive",
+  "directionKey": "0de0a587",
+  "mode": "persuade",
+  "concept": "Layered technical parts archive with blueprint cobalt, vellum sheets, matte metal, ledger rules and one orange conversion signal.",
+  "colors": {
+    "cobalt": "#083e81",
+    "cobaltDark": "#06366f",
+    "mapField": "#082f64",
+    "paper": "#eef1f2",
+    "vellum": "#d8d9db",
+    "ink": "#0c1219",
+    "footer": "#071b32",
+    "signal": "#f17130"
+  },
+  "typography": {
+    "display": "Yaldevi 700",
+    "ui": "Exo 2 300-700",
+    "wordmark": "Heavy system sans, tight tracking"
+  },
+  "breakpoints": {
+    "mobile": "max-width: 900px",
+    "tabletBridge": "901px-1023px",
+    "desktop": "min-width: 1024px",
+    "approvedComp": "1586x992"
+  },
+  "interaction": {
+    "primaryAction": "orange rectangular CTA",
+    "secondaryAction": "cobalt or outlined control",
+    "motion": ["subtle hero plate pointer shift", "one-time section reveals"],
+    "reducedMotion": true
+  },
+  "locales": {
+    "ru": "/",
+    "en": "/en/",
+    "fr": "/fr/",
+    "pl": "/pl/"
+  },
+  "contentRules": {
+    "unknownPhysicalDetails": "Label as pending; never infer address, hours, coordinates, phone, or supported languages.",
+    "futureStores": "Show reserved non-clickable AUTO.PRO slots until verified URLs are supplied.",
+    "orangeUsage": "Reserve for the primary conversion action and small map/location signal."
+  },
+  "assets": {
+    "heroPlate": "public/assets/plates/hero-mechanical-plate.png",
+    "classicCar": "public/assets/plates/classic-car-detail.png",
+    "promptDirectory": ".impeccable/build/prompts"
+  },
+  "verification": {
+    "heroSimilarity": 80,
+    "responsiveSimilarity": 80,
+    "responsiveDisposition": "match",
+    "finishDisposition": "ship"
+  }
+}

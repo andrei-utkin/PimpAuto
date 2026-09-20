@@ -1,0 +1,23 @@
+---
+import LocaleLanding from '../../components/LocaleLanding.astro';
+const copy = {
+  lang: 'es', path: '/es/',
+  title: 'Pimp Auto — búsqueda y entrega de recambios difíciles de encontrar',
+  description: 'Búsqueda de recambios raros por VIN, referencia o foto. Verificación de compatibilidad, búsqueda internacional y entrega. Tienda PimpAvto en AUTO.PRO.',
+  eyebrow: 'CLÁSICOS · YOUNGTIMER · PREMIUM',
+  headline: 'Encontramos la pieza rara que necesita su coche.',
+  support: 'Empiece con el VIN, una referencia, una foto o una descripción. Buscamos a nivel internacional, comprobamos la compatibilidad y organizamos la entrega.',
+  cta: 'ENVIAR UNA SOLICITUD', methods: ['VIN', 'REFERENCIA', 'FOTO', 'DESCRIPCIÓN'],
+  expertiseLabel: 'EXPERIENCIA', expertiseTitle: 'Piezas que no están en cualquier estantería.',
+  expertiseCopy: 'Desde 2011, Pimp Auto ayuda a propietarios de clásicos, youngtimers y vehículos premium a convertir una consulta incompleta en una pieza compatible y una ruta de entrega clara.',
+  regionsLabel: 'BÚSQUEDA INTERNACIONAL', regionsTitle: 'Buscamos donde realmente está la pieza.',
+  regionsCopy: 'No nos limitamos a un solo catálogo. Comparamos referencias en Europa, Estados Unidos, Japón y proveedores especializados.',
+  storesLabel: 'TIENDAS REGIONALES', storesTitle: 'Tiendas AUTO.PRO por región.',
+  storesCopy: 'Las tiendas española y polaca de PimpAvto ya están disponibles en AUTO.PRO. El enlace francés se añadirá después de confirmarlo.', pending: 'ENLACE PRÓXIMAMENTE', storeOpen: 'ABRIR AUTO.PRO',
+  locationLabel: 'PUNTO FÍSICO', locationTitle: 'Mandelieu-la-Napoule',
+  locationCopy: 'Pimp Auto dispone de un punto físico en Mandelieu, Francia. La dirección, el horario y los teléfonos están verificados en AUTO.PRO.',
+  hoursTitle: 'Horario', hoursValue: 'Lun–Vie 09:00–18:00 · Sáb–Dom cerrado', phonesTitle: 'Teléfonos', addressTitle: 'Dirección', addressValue: '865 av. de Cannes, Mandelieu-la-Napoule, Francia',
+  contact: 'Búsqueda de recambios raros por VIN, referencia o foto.'
+};
+---
+<LocaleLanding {copy} />

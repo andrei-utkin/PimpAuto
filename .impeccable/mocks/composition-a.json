@@ -1,0 +1,8 @@
+{
+  "image": ".impeccable/mocks/composition-a.png",
+  "promptFile": ".impeccable/mocks/composition-a.prompt.txt",
+  "generator": "imagegen",
+  "approved": true,
+  "approvedAt": "2026-09-20",
+  "approvalNote": "User selected composition A: Диагональная картотека."
+}
