@@ -14,7 +14,8 @@ interface Props {
 
 const { title, description, lang = 'ru', localePath = '/' } = Astro.props;
 const socialImage = '/assets/plates/hero-mechanical-plate.png';
-const absolute = (path: string) => Astro.site ? new URL(path, Astro.site).toString() : path;
+const withBase = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+const absolute = (path: string) => Astro.site ? new URL(withBase(path), Astro.site).toString() : withBase(path);
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -49,7 +50,7 @@ const structuredData = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#083e81" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href={withBase('/favicon.svg')} type="image/svg+xml" />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Pimp Auto" />
